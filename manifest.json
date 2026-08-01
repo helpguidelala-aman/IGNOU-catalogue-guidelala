@@ -1,0 +1,15 @@
+{
+  "name": "GUIDELALA IGNOU Course Finder",
+  "short_name": "GUIDELALA",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#192029",
+  "icons": [
+    {
+      "src": "assets/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

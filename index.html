@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#192029">
+<title>GUIDELALA IGNOU Course Finder</title>
+<meta name="description" content="Search IGNOU programme codes, course codes and course titles in the official GUIDELALA catalogue.">
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="assets/logo.png">
+</head>
+<body>
+<section class="finder" aria-label="IGNOU Course Finder">
+  <div class="finder-inner">
+    <div class="finder-top">
+      <div class="finder-title">Find your IGNOU course instantly</div>
+      <div class="finder-subtitle">Search by course code, programme code or course title</div>
+    </div>
+    <form id="searchForm" class="search-row" autocomplete="off">
+      <div class="search-box">
+        <img src="icons/search.svg" alt="">
+        <input
+          id="courseSearch"
+          type="search"
+          inputmode="search"
+          enterkeyhint="search"
+          autocapitalize="characters"
+          autocomplete="off"
+          spellcheck="false"
+          placeholder="Example: MCO-1 or MCOM"
+          aria-controls="results"
+        >
+        <button id="clearSearch" class="clear-btn" type="button" aria-label="Clear search">×</button>
+      </div>
+      <button class="search-btn" type="submit">SEARCH</button>
+    </form>
+    <div id="feedback" class="feedback">Enter a course code or programme code.</div>
+    <div id="loading" class="loading">Loading course database…</div>
+    <div class="quick-search">
+      <span>Try:</span>
+      <button class="quick-chip" type="button" data-query="MCO-1">MCO-1</button>
+      <button class="quick-chip" type="button" data-query="MCOM">MCOM</button>
+      <button class="quick-chip" type="button" data-query="MBA">MBA</button>
+      <button class="quick-chip" type="button" data-query="BEVAE-181">BEVAE-181</button>
+    </div>
+  </div>
+  <div id="results" class="results" role="region" aria-live="polite"></div>
+</section>
+
+<div id="errorBanner" class="error-banner"></div>
+
+<main class="page">
+  <section class="cover">
+    <div class="brand">
+      <img src="assets/logo.png" alt="GUIDELALA logo">
+      <div>
+        <div class="brand-name">GUIDELALA</div>
+        <div class="brand-tagline">GUIDE SMART. SCORE HIGH.</div>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="eyebrow">Complete IGNOU Study-Material Catalogue</div>
+      <h1>Find Your Programme.<br>Choose Your Course.</h1>
+      <p>Search programme-wise, year-wise and semester-wise study materials prepared for IGNOU learners.</p>
+      <div class="highlight">AVAILABLE FOR ALL IGNOU COURSES</div>
+    </div>
+
+    <div id="products" class="products">
+      <article class="product-card">
+        <div class="product-image"><img src="assets/guide-book.jpg" alt="IGNOU Guide Books" loading="lazy"></div>
+        <h2>IGNOU Guide Books</h2>
+        <div class="price">MRP ₹300</div>
+        <p>Simplified concepts, notes and exam-focused learning support.</p>
+      </article>
+
+      <article class="product-card">
+        <div class="product-image"><img src="assets/guess-paper.jpg" alt="IGNOU Solved Guess Papers" loading="lazy"></div>
+        <h2>IGNOU Solved Guess Papers</h2>
+        <div class="price">MRP ₹200</div>
+        <p>Most probable questions, solved answers and quick revision.</p>
+      </article>
+
+      <article class="product-card">
+        <div class="product-image"><img src="assets/previous-year-papers.jpg" alt="IGNOU Previous Year Papers" loading="lazy"></div>
+        <h2>IGNOU Previous Year Papers</h2>
+        <div class="price">MRP ₹200</div>
+        <p>Solved previous year papers for exam-pattern practice.</p>
+      </article>
+
+      <article class="product-card">
+        <div class="product-image"><img src="assets/exam-preparation-kit.jpg" alt="IGNOU Exam Preparation Kits" loading="lazy"></div>
+        <h2>IGNOU Exam Preparation Kits</h2>
+        <div class="price">MRP ₹500</div>
+        <p>Complete revision and practice resources in one kit.</p>
+      </article>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><strong>319</strong><span>Programmes listed</span></div>
+      <div class="stat"><strong>3306</strong><span>Courses searchable</span></div>
+      <div class="stat"><strong>4</strong><span>Study-material formats</span></div>
+    </div>
+  </section>
+</main>
+
+<a class="pdf-cta"
+   href="https://wa.me/919599021931?text=Hello%20GUIDELALA%2C%20I%20want%20to%20get%20the%20PDF%2Fsoft-copy%20of%20my%20book."
+   target="_blank" rel="noopener">
+  <img src="icons/pdf.svg" alt="">
+  <span>GET PDF OF YOUR BOOK<small>Tap to order the soft-copy on WhatsApp</small></span>
+</a>
+
+<script src="app.js" defer></script>
+</body>
+</html>
